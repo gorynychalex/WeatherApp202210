@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_picture"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:background="@color/user1"
+        android:fontFamily="@font/yeseva_one"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="80sp"
+        android:background="@color/user2"
+        android:backgroundTint="@color/design_default_color_background"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/hint_user_field"
+        android:inputType="textPersonName"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_marginHorizontal="90sp"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/user2"
+        android:fontFamily="@font/yeseva_one"
+        android:text="@string/main_button"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_btn"
+        android:layout_marginTop="50sp"
+        android:background="@color/user2"
+        android:fontFamily="@font/yeseva_one"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+</RelativeLayout>
